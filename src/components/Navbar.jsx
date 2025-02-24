@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-// test
+// test navbar
 const Navbar = () => {
   return (
     <nav>
