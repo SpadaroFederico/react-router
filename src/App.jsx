@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Posts from "./pages/Posts";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
@@ -16,6 +16,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
