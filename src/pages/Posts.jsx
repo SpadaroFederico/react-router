@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Posts.css"; // Importiamo il file CSS
 
 const posts = [
   { id: 1, title: "Post 1", content: "Contenuto del primo post." },
@@ -10,15 +11,15 @@ const Posts = () => {
   return (
     <div>
       <h1>Lista dei Post</h1>
-      <ul>
+      <div className="posts-container">
         {posts.map((post) => (
-          <li key={post.id}>
+          <div key={post.id} className="post-card">
             <h2>{post.title}</h2>
             <p>{post.content}</p>
             <Link to={`/posts/${post.id}`}>Leggi di più</Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
